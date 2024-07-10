@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección de héroe */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdde1;
+  background-image: linear-gradient(to right, #ffafbd, #ffdde1);
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 80%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 50%;
+  height: 80%;
+  max-width: 600px;
+  border-radius: 35px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Sección de carrusel de imágenes */
+.carrusel-container {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  align-items: center;
+  background-color: #ff6b8b;
+}
+
+.carrusel {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.carrusel-container h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.carrusel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-slides {
+  display: flex;
+  width: 100%;
+}
+
+.carrusel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carrusel-slide img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 30px;
+  color: #000;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 58px;
+  height: 58px;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.carrusel-btn svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carrusel-btn-prev {
+  left: 10px;
+}
+
+.carrusel-btn-next {
+  right: 10px;
+}
+
+/* Sección de dedicación */
+.dedication {
+  padding: 50px 0;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+.dedication-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dedication-title {
+  font-size: 36px;
+  color: #ff6b8b;
+}
+
+.dedication-text {
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.dedication video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Sección de foto y cita */
+.photo-and-quote {
+  padding: 50px 0;
+  background-color: #ffe4e1;
+  text-align: center;
+}
+
+.photo-and-quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.photo-and-quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-and-quote-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.photo-and-quote-text {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Carrusel vertical */
+.vertical-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.vertical-carousel-image {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Música de fondo */
+audio {
+  display: none;
+}
+
+/* Botón para reproducir música */
+#play-music {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6b8b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
